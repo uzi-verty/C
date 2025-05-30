@@ -7,7 +7,7 @@ void print_bar(int x){
 	for (int i = 0; i < x ; i++){
 		printf(".");
 	}	
-	printf(">");
+	printf("> %d", x);
 }
 
 int main(){
