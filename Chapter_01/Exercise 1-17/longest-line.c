@@ -42,7 +42,7 @@ int get_line(char s[]){
 		s[i] = c;
 	}
 	
-	s[i] = '\0';
+	s[i++] = '\0';
 	/* when the array is full, the counter keeps increasing if the line is bigger than the MAXLINE */
 	while (c != EOF && c != '\n'){
 		i++;
@@ -50,9 +50,6 @@ int get_line(char s[]){
 	
 	}
 
-	if (c == '\n'){
-		i++;
-	}
 	return i;
 }
 
